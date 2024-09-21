@@ -1,0 +1,225 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.user{
+    justify-content: center;
+}
+
+.form {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inp {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    text-indent: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #282828;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    color: rgba(0, 68, 176, 0.921);
+}
+
+.btn {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #167ce0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #167ce0;
+    color: aliceblue;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #005db9;
+}
+
+.success, .Login {
+    width: 100%;
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.error {
+    width: 100%;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.invisible {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    opacity: 0;
+}
+
+/* css for tracking food page */
+.search {
+    position: relative;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.track-container {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-inp {
+    width: 100%;
+    height: 50px;
+    text-indent: 15px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #282828;
+    color: #fff;
+}
+
+.search-results {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item {
+    justify-self: center;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 10px 0px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item:hover {
+    background-color: #444;
+}
+
+.food {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.food-name {
+    width: 100%;
+}
+
+.food-img {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.food-img img {
+    height: 100%;
+    width: 500px;
+    border:3px solid rgb(40, 38, 38);
+    border-radius: 10px;
+    text-align: center;
+    object-fit: fill;
+}
+
+.nutrient {
+    width: 50%;
+    padding: 10px 0px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.track-control{
+    width:100%;
+    display: flex;
+}
+.quantity {
+    width: 100%;
+    height: 50px;
+    text-indent: 10px;
+    font-size: 1.05rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #282828;
+    color: #fff;
+}
+
+.track-btn {
+    width: 20%;
+    padding: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.track-btn:hover {
+    background-color: #cc0000;
+}
+/* css for diet */
+.diet_container{
+    height:100%;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.item_diet{
+    width:100%;
+    padding:20px;
+    background-color:#2f2f2f;
+}
+@media only screen and (max-width: 500px) {
+    .form {
+        width: 90%;
+    }
+
+    .quantity {
+        width: 70%;
+    }
+
+    .track-btn {
+        width: 30%;
+        font-size: 15px;
+    }
+}
