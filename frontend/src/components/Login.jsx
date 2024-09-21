@@ -27,7 +27,7 @@ export default function Login() {
     async function handleSubmit(event){
         event.preventDefault()
         console.log(userCred)
-        await fetch("http://localhost:8000/login",{
+        await fetch("https://nutrify-backend-ma47.onrender.com/login",{
             method:"POST",
             body:JSON.stringify(userCred),
             headers:{
