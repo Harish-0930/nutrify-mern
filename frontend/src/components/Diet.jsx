@@ -22,7 +22,7 @@ export default function Diet(){
 
         const token = tokenRef.current;
         const userId = userIdRef.current;
-        fetch(`https://nutrify-backend-ma47.onrender.com/track/${userId}/${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`,{
+        fetch(`http://localhost:8000/track/${userId}/${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`,{
             method:"GET",
             header:{
                 "Authorization":`Bearer ${token}`

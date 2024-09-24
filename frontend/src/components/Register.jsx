@@ -21,7 +21,7 @@ export default function Register() {
     function handleSubmit(event){
         event.preventDefault()
         console.log(userDetails)
-        fetch("https://nutrify-backend-ma47.onrender.com/register",{
+        fetch("http://localhost:8000/register",{
             method:"POST",
             body:JSON.stringify(userDetails),
             headers:{

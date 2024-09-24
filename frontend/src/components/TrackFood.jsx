@@ -18,7 +18,7 @@ function TrackFood() {
     if(event.target.value!=="" && event.target.value.trim()!=="" && event.target.value.length>0)
     {
 
-      fetch(`https://nutrify-backend-ma47.onrender.com/foods/${event.target.value}`,{
+      fetch(`http://localhost:8000/foods/${event.target.value}`,{
         method:"GET",
         headers:{
           "Authorization":"Bearer "+loggedData.loggedUser.token
